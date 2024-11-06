@@ -1,0 +1,10 @@
+.st0,.st1,.st2,.st3,.st4,.st5,.st6,.st7,.st8,.st9{stroke:#065e52}
+svg.svg-icon {fill: #065e52;stroke: #065e52;}
+hr.divider:after,.timeline-content:after,.owl-theme .owl-controls .owl-page.active span{background-color: #065e52;}
+mark{background-image: linear-gradient(120deg,#065e52 0,#065e52 100%);}
+.skill.dev .progress .percentage,.bounce-circle,::selection {background-color: #065e52;}
+.timeline-content span.current,.title.dev,.filter li a.active,a,.text-secondary,.scroll-to-top, .scroll-to-top-inner{color: #065e52;}
+h1 > a:hover, h2 > a:hover, h3 > a:hover, 
+h4 > a:hover, h5 > a:hover, h6 > a:hover,
+.h1 > a:hover, .h2 > a:hover, .h3 > a:hover,
+.h4 > a:hover, .h5 > a:hover, .h6 > a:hover,a:hover,.btn.btn-round:hover{color: #065e52;}

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Metas -->
+      <meta charset="utf-8">
+      <title>News Recommender System</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="/assets/img/profile/aasma_pic.jpg"/>
+      <!-- Css -->
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="css/venobox.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="css/animate.css" rel="stylesheet" type="text/css" media="all"/>
+      <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="css/owl-carousel/owl.carousel.css" rel="stylesheet"  media="all"/>
+      <link href="css/owl-carousel/owl.theme.css" rel="stylesheet"  media="all" />
+      <link href="css/owl-carousel/owl.transitions.css" rel="stylesheet"  media="all" />
+      <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+      <!--Alternate styles for demo purposes only-->
+      <link href="css/switcher.css"  rel="stylesheet" type="text/css"/>
+      <link href="css/styles/clr-1.css" rel="stylesheet" type="text/css" title="clr-1" media="all"/>
+      <link href="css/styles/clr-2.css" rel="alternate stylesheet" type="text/css" title="clr-2" media="all" />
+      <link href="css/styles/clr-3.css" rel="alternate stylesheet" type="text/css" title="clr-3" media="all" />
+      <link href="css/styles/clr-4.css" rel="alternate stylesheet" type="text/css" title="clr-4" media="all" />
+      <link href="css/styles/clr-5.css" rel="alternate stylesheet" type="text/css" title="clr-5" media="all" />
+      <link href="css/styles/clr-6.css" rel="alternate stylesheet" type="text/css" title="clr-6" media="all" />
+      <link href="css/styles/clr-7.css" rel="alternate stylesheet" type="text/css" title="clr-7" media="all" />
+      <link href="css/styles/clr-8.css" rel="alternate stylesheet" type="text/css" title="clr-8" media="all" />
+      <link href="css/styles/clr-9.css" rel="alternate stylesheet" type="text/css" title="clr-9" media="all" />
+      <link href="css/styles/clr-10.css" rel="alternate stylesheet" type="text/css" title="clr-10" media="all" />
+      <link href="css/styles/clr-11.css" rel="alternate stylesheet" type="text/css" title="clr-11" media="all" />
+      <link href="css/styles/clr-12.css" rel="alternate stylesheet" type="text/css" title="clr-12" media="all" />
+      <link href="css/styles/clr-13.css" rel="alternate stylesheet" type="text/css" title="clr-13" media="all" />
+      <link href="css/styles/clr-14.css" rel="alternate stylesheet" type="text/css" title="clr-14" media="all" />
+      <link href="css/styles/clr-15.css" rel="alternate stylesheet" type="text/css" title="clr-15" media="all" />
+      <link href="css/styles/clr-16.css" rel="alternate stylesheet" type="text/css" title="clr-16" media="all" />
+      <link href="css/styles/clr-17.css" rel="alternate stylesheet" type="text/css" title="clr-17" media="all" />
+      <link href="css/styles/clr-18.css" rel="alternate stylesheet" type="text/css" title="clr-18" media="all" />
+      <link href="css/styles/clr-19.css" rel="alternate stylesheet" type="text/css" title="clr-19" media="all" />
+      <link href="css/styles/clr-20.css" rel="alternate stylesheet" type="text/css" title="clr-20" media="all" />
+      <link href="css/styles/clr-21.css" rel="alternate stylesheet" type="text/css" title="clr-21" media="all" />
+      <link href="css/styles/clr-22.css" rel="alternate stylesheet" type="text/css" title="clr-22" media="all" />
+      <link href="css/styles/clr-23.css" rel="alternate stylesheet" type="text/css" title="clr-23" media="all" />
+      <link href="css/styles/clr-24.css" rel="alternate stylesheet" type="text/css" title="clr-24" media="all" />
+      <link href="css/styles/clr-25.css" rel="alternate stylesheet" type="text/css" title="clr-25" media="all" />
+      <link href="css/styles/clr-26.css" rel="alternate stylesheet" type="text/css" title="clr-26" media="all" />
+      <link href="css/styles/clr-27.css" rel="alternate stylesheet" type="text/css" title="clr-27" media="all" />
+      <link href="css/styles/clr-28.css" rel="alternate stylesheet" type="text/css" title="clr-28" media="all" />
+      <link href="css/styles/clr-29.css" rel="alternate stylesheet" type="text/css" title="clr-29" media="all" />
+      <link href="css/styles/clr-30.css" rel="alternate stylesheet" type="text/css" title="clr-30" media="all" />
+      <link href="css/styles/clr-31.css" rel="alternate stylesheet" type="text/css" title="clr-31" media="all" />
+      <link href="css/styles/clr-32.css" rel="alternate stylesheet" type="text/css" title="clr-32" media="all" />
+      <link href="css/styles/clr-33.css" rel="alternate stylesheet" type="text/css" title="clr-33" media="all" />
+   </head>
+   <body>
+      <div class="loader">
+         <div class="loader-inner">
+            <div class="bounce">
+               <div class="bounce-circle"></div>
+            </div>
+         </div>
+      </div>
+      <div id="wrapper" class="wrapper">
+      
+         <div class="parallax position-absolute" data-relative-input="true">
+            <svg class="max-width-8 layer p1 " version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 35.9 38.6" enable-background="new 0 0 35.9 38.6;" xml:space="preserve" data-depth="0.3">
+               <g>
+                  <g>
+                     <g>
+                        <g>
+                           <defs>
+                              <path id="SVGID_1_" d="M0,4.6l2.7,30.1c0.3,3.3,4,5,6.7,3.1l24.7-17.3c2.7-1.9,2.3-6-0.6-7.4L6.1,0.4C3.1-1-0.3,1.4,0,4.6z"/>
+                           </defs>
+                           <clipPath id="SVGID_2_">
+                              <use xlink:href="#SVGID_1_"/>
+                           </clipPath>
+                           <line class="st0" x1="-26.8" y1="10.7" x2="20.7" y2="-22.8"/>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+               <g>
+                  <g>
+                     <g>
+                        <g>
+                           <defs>
+                              <path id="SVGID_3_" d="M0,4.6l2.7,30.1c0.3,3.3,4,5,6.7,3.1l24.7-17.3c2.7-1.9,2.3-6-0.6-7.4L6.1,0.4C3.1-1-0.3,1.4,0,4.6z"/>
+                           </defs>
+                           <clipPath id="SVGID_4_">
+                              <use xlink:href="#SVGID_3_"/>
+                           </clipPath>
+                           <line class="st1" x1="-24.2" y1="14.5" x2="23.5" y2="-19"/>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+               <g>
+                  <g>
+                     <g>
+                        <defs>
+                           <path id="SVGID_5_" d="M0,4.6l2.7,30.1c0.3,3.3,4,5,6.7,3.1l24.7-17.3c2.7-1.9,2.3-6-0.6-7.4L6.1,0.4C3.1-1-0.3,1.4,0,4.6z"/>
+                        </defs>
+                        <clipPath id="SVGID_6_">
+                           <use xlink:href="#SVGID_5_"/>
+                        </clipPath>
+                        <line class="st2" x1="-21.5" y1="18.4" x2="26.2" y2="-15.1"/>
+                     </g>
+                  </g>
+               </g>
+               <g>
+                  <g>
+                     <g>
+                        <defs>
+                           <path id="SVGID_7_" d="M0,4.6l2.7,30.1c0.3,3.3,4,5,6.7,3.1l24.7-17.3c2.7-1.9,2.3-6-0.6-7.4L6.1,0.4C3.1-1-0.3,1.4,0,4.6z"/>
+                        </defs>
+                        <clipPath id="SVGID_8_">
+                           <use xlink:href="#SVGID_7_" />
+                        </clipPath>
+                        <line class="st3" x1="-18.7" y1="22.2" x2="28.9" y2="-11.3"/>
+                     </g>
+                  </g>
+               </g>
+               <g>
+                  <g>
+                     <g>
+                        <g>
+                           <defs>
+                              <path id="SVGID_9_" d="M0,4.6l2.7,30.1c0.3,3.3,4,5,6.7,3.1l24.7-17.3c2.7-1.9,2.3-6-0.6-7.4L6.1,0.4C3.1-1-0.3,1.4,0,4.6z"/>
+                           </defs>
+                           <clipPath id="SVGID_10_">
+                              <use xlink:href="#SVGID_9_"/>
+                           </clipPath>
+                           <line class="st4" x1="-16.1" y1="26.1" x2="31.6" y2="-7.4"/>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+               <g>
+                  <g>
+                     <g>
+                        <g>
+                           <defs>
+                              <path id="SVGID_11_" d="M0,4.6l2.7,30.1c0.3,3.3,4,5,6.7,3.1l24.7-17.3c2.7-1.9,2.3-6-0.6-7.4L6.1,0.4C3.1-1-0.3,1.4,0,4.6z"/>
+                           </defs>
+                           <clipPath id="SVGID_12_">
+                              <use xlink:href="#SVGID_11_"/>
+                           </clipPath>
+                           <line class="st5" x1="-13.3" y1="29.9" x2="34.4" y2="-3.5"/>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+               <g>
+                  <g>
+                     <g>
+                        <g>
+                           <defs>
+                              <path id="SVGID_13_" d="M0,4.6l2.7,30.1c0.3,3.3,4,5,6.7,3.1l24.7-17.3c2.7-1.9,2.3-6-0.6-7.4L6.1,0.4C3.1-1-0.3,1.4,0,4.6z"/>
+                           </defs>
+                           <clipPath id="SVGID_14_">
+                              <use xlink:href="#SVGID_13_"/>
+                           </clipPath>
+                           <line class="st6" x1="-10.6" y1="33.8" x2="37" y2="0.3"/>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+               <g>
+                  <g>
+                     <defs>
+                        <path id="SVGID_15_" d="M0,4.6l2.7,30.1c0.3,3.3,4,5,6.7,3.1l24.7-17.3c2.7-1.9,2.3-6-0.6-7.4L6.1,0.4C3.1-1-0.3,1.4,0,4.6z"/>
+                     </defs>
+                     <clipPath id="SVGID_16_">
+                        <use xlink:href="#SVGID_15_"/>
+                     </clipPath>
+                     <line class="st7" x1="-7.9" y1="37.7" x2="39.7" y2="4.2"/>
+                  </g>
+               </g>
+               <g>
+                  <g>
+                     <g>
+                        <g>
+                           <defs>
+                              <path id="SVGID_17_" d="M0,4.6l2.7,30.1c0.3,3.3,4,5,6.7,3.1l24.7-17.3c2.7-1.9,2.3-6-0.6-7.4L6.1,0.4C3.1-1-0.3,1.4,0,4.6z"/>
+                           </defs>
+                           <clipPath id="SVGID_18_">
+                              <use xlink:href="#SVGID_17_"/>
+                           </clipPath>
+                           <line class="st8" x1="-5.2" y1="41.5" x2="42.5" y2="8"/>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+               <g>
+                  <g>
+                     <g>
+                        <g>
+                           <defs>
+                              <path id="SVGID_19_" d="M0,4.6l2.7,30.1c0.3,3.3,4,5,6.7,3.1l24.7-17.3c2.7-1.9,2.3-6-0.6-7.4L6.1,0.4C3.1-1-0.3,1.4,0,4.6z"/>
+                           </defs>
+                           <clipPath id="SVGID_20_">
+                              <use xlink:href="#SVGID_19_"/>
+                           </clipPath>
+                           <line class="st9" x1="-2.4" y1="45.4" x2="45.1" y2="11.9"/>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+               <g>
+                  <g>
+                     <g>
+                        <g>
+                           <defs>
+                              <path id="SVGID_21_" d="M0,4.6l2.7,30.1c0.3,3.3,4,5,6.7,3.1l24.7-17.3c2.7-1.9,2.3-6-0.6-7.4L6.1,0.4C3.1-1-0.3,1.4,0,4.6z"/>
+                           </defs>
+                           <clipPath id="SVGID_22_">
+                              <use xlink:href="#SVGID_21_"/>
+                           </clipPath>
+                           <line class="st10" x1="0.2" y1="49.2" x2="47.9" y2="15.8"/>
+                        </g>
+                     </g>
+                  </g>
+               </g>
+            </svg>
+            <img class="max-width-9 layer p2 " src="assets/svg/square-rl.svg" alt="" data-depth="0.7">
+            <img class="max-width-9 shadow-inner radius-5 layer p3" src="assets/svg/circle.svg" alt="" data-depth="0.5">
+            <img class="max-width-10 shadow-inner radius-5 layer p4 " src="assets/svg/dashed-circle.svg" alt="" data-depth="0.3">
+            <img class="max-width-8 layer p5 " src="assets/svg/square-poly.svg" alt="" data-depth="0.7">
+            <img class="max-width-8 layer shadow radius-2 p6" src="assets/svg/square.svg" alt="" data-depth="0.5">
+         </div>
+         <div class="blurred-content"></div>
+         <section class="project spacer-xlg">
+            <div class="container  shadow bg-light radius-2 padding-dy">
+               <div class="row mb-5">
+                  <div class="col">
+                     <h6 class="font-weight-700  mb-0 text-uppercase mb-2">Final Year Project</h6>
+                     <hr class="divider divider-left divider-lg float-left">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col text-center">
+                     <ul class="list-inline project-nav mb-0">
+                        <li class="outer radius-2 list-inline-item mr-1"><a class="inner btn btn-round btn-icon" href="#">
+                           <span class="fa fa-angle-left btn-icon-inner"></span></a>
+                        </li>
+                        <li class="outer radius-2 list-inline-item mr-1"><a class="inner btn btn-round btn-icon" href="index.html#portfolio">
+                           <span class="fa fa-times btn-icon-inner"></span></a>
+                        </li>
+                        <li class="outer radius-2 list-inline-item mr-1"><a class="inner btn btn-round btn-icon" href="#">
+                           <span class="fa fa-angle-right btn-icon-inner"></span></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="row align-items-center justify-content-center mt-6">
+                  
+                     <h1 class="font-weight-600">News <mark>Recommender</mark> System</h1><br>
+
+                     <div class="mb-6 item">
+                        <a class="radius-1 shadow-inner hover-effect d-block venobox vbox-item" data-overlay="rgba(52,58,64,.6)" href="assets/img/portfolio/large-1.jpg">
+                           <span class="hover-effect-container">
+                           <span class="hover-effect-icon ">
+                           <span class=" fas fa-eye top-icon "></span>
+                           </span>
+                           </span>
+                           <div class="  p-2  ">
+                              <div class="shadow radius-1">
+                                 <img class="img-fluid radius-1" src="assets/img/projects/news_recommender/news_rec (4).png" alt="">
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-md-10">
+                     
+                     <h5> <strong><b>System Introduction </b></strong> </h5>
+                     <p class="mb-0" style="text-align: justify;">
+                        This software is Based on Recommendation Engine, in which we are building a news recommendation system and Fake news 
+                        detection software. The purpose of this software is to show or provide only that news to our users which is according
+                        to their interest and make sure that only authenticated news will be shown to our users
+                     </p>
+                     <h5> <strong><b>Background of the System</b></strong> </h5>
+                     <p class="mb-0" style="text-align: justify;">
+                        If we look at existing systems there are multiple platforms and news channels that give a lot of 
+                        news but there are giving every news to every user, yes they have classifies the different 
+                        categories of news and place and show in managed format but still, the user needs to find out the
+                        news of his/her interest suppose a person like to see a sports news so he/she needs to go in the sports
+                        section to see sports news. So, in our case, we are trying to reduce this searching problem and show only
+                        that news to the user which are related to the interest of that user.
+                     </p>
+                     <p class="mb-0" style="text-align: justify;">
+                        If we look at social media there are a lot of platforms which are providing numerous amount of 
+                        news to users but in some cases, they are also passing fake news 
+                        (maybe for increasing the network traffic)  to their user so we will be overcome this 
+                        problem and make sure no fake news is passed to our users.
+                     </p>
+                     <h5> <strong><b>Objectives of the System</b></strong> </h5>
+                     <ul>
+                        <li>User Don’t need to search for news, which is according to his interest, 
+                           we will provide news according to their interest.</li>
+                        <li>Fake news should be avoided to give a user.</li>
+                        <li>Ringing notifications to the user's timetable.</li>
+                        <li>Provide Pakistan and world news on a single platform as user-friendly as it can.</li>
+                     </ul>
+
+                     <h5> <strong><b>Significance of the System</b></strong> </h5>
+                     <p class="mb-0" style="text-align: justify;">
+                        Today due to social media and easy access over the world there is a huge amount of news in 
+                        the different category are available on different platforms on daily bases so due to the huge
+                        amount and category it is difficult for the user to stay updated on that news which is related
+                        to his/her interest or field or department, we are solving this problem by using a recommendation
+                        system of news, as we see there are multiple recommendation systems on other products but news 
+                        recommenders are not often seen in the market in the so, now we are working on news recommendation 
+                        system so our user is easily stay updated about what is now happening in Pakistan and world in their fields. 
+                        As news is text data so our system can easily adapt to another field that has text data and our system will be 
+                        easily integrated also with another domain.
+                        Due to the freehand on social media, it is very to spared fake news over the whole globe in 
+                        seconds, so we also integrating a fake news detection module in our system so we can prevent our user from seeing
+                        fake news.
+                     </p>
+                     <br>
+                     <h5> <strong><b>Over all working of the System</b></strong> </h5>
+
+                     <p class="mb-0" style="text-align: justify;">
+                        Initially I wrote web scrapers using python (scrapy), for each news provider in Pakistan e.g. Ary | Geo | Dunya | Bol | Daily | AbbTak etc.
+                        so firstly I was only scraping classified News (labeled News) and dump into our db (MongoDB Atlas) this process goes on for 4-5 months
+                        and we got 100,000 news of 15 different categories e.g Pakistan | World | Bussiness | Entertainment | Technology  etc. Then I apply Data Wrangling concepts and 
+                        clean data then by using NLP concepts and Random Forest I build model for news classification its accuracy was 74% during building model I faced Imbalnced classification problems.
+                        After building model I also started scraping the non labeled news and classifies them using our model this process goes on I used Apache AirFlow to build this piple line for scraping
+                        to classification and dumping into our centralized data base which runs after 3 hours every day. 
+                     </p>
+                     <p class="mb-0" style="text-align: justify;">
+                        Then for News recommendation I build dumpy web pages and ask peoples to select any 5 to 7 categories of news they want to see so for This
+                        purpose we ask peoples in our circle due to this activity we got 1,000 responses, based on those responses I used Apriori Algorithm for rules genration.
+                        Then we build WEB and Android application, Android application was build my patner and web app was build by me I used MERN stack for building web app.
+                        So in web app we ask user to signin and tell us any 3 categories they like based on that we build users profile using those rules we genrated and infomration given while
+                        singin then we use that infomration to recommend news, if user does not want to sign in we initialy show latest news according to their location and then we track their activities on our App 
+                        and we use that infomration to build their profiles using local storage and cookies this mechanism is used by both Mobile app as well as Web app.
+                     </p>
+
+                     <h5> <a href="assets/docs/news_recom/FINAL REPORT News Recommendation.pdf"> <strong><b>Click here to see Complete Report</b></strong> </a>  </h5>
+
+
+                     <div class="w-100">
+                        <hr class="divider divider-md divider-center mt-5 mb-5 float-left ">
+                     </div>
+                     <ul class="list-inline font-size-15 w-100 float-left">
+                        <li>Undertaken By :
+                           <strong class="font-weight-600 text-dark">Aasma Aas Mughal &amp; Ume Zara</strong>
+                        </li>
+                        <li>Supervised By :
+                           <strong class="font-weight-600 text-dark">Dr. Hikmat Ullah Khan</strong>
+                        </li>
+                        <li>University :
+                           <strong class="font-weight-600 text-dark">Comsats University Lahore</strong>
+                        </li>
+                        <li>Year :
+                           <strong class="font-weight-600 text-dark">2020-2021</strong>
+                        </li>
+                        
+                     </ul>
+                  </div>
+               </div>
+               <br>
+               
+               <div class="row align-items-center justify-content-center mt-5">
+                  
+                  <div class="col-md-10">
+                     <h1 class="font-weight-600">Images <mark>WEB</mark> App</h1><br>
+                     <div class="mb-6 item">
+                        <a class="radius-1 shadow-inner hover-effect d-block venobox vbox-item" data-overlay="rgba(52,58,64,.6)" href="assets/img/portfolio/large-1.jpg">
+                           <span class="hover-effect-container">
+                           <span class="hover-effect-icon ">
+                           <span class=" fas fa-eye top-icon "></span>
+                           </span>
+                           </span>
+                           <div class="  p-2  ">
+                              <div class="shadow radius-1">
+                                 <img class="img-fluid radius-1" src="assets/img/projects/news_recommender/news_rec (3).png" alt="">
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="mb-6 item">
+                        <a class="radius-1 shadow-inner hover-effect d-block venobox vbox-item" data-overlay="rgba(52,58,64,.6)" href="assets/img/portfolio/large-2.jpg">
+                           <span class="hover-effect-container">
+                           <span class="hover-effect-icon ">
+                           <span class=" fas fa-eye top-icon "></span>
+                           </span>
+                           </span>
+                           <div class="  p-2  ">
+                              <div class="shadow radius-1">
+                                 <img class="img-fluid radius-1" src="assets/img/projects/news_recommender/news_rec (10).png" alt="">
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="mb-6 item">
+                        <a class="radius-1 shadow-inner hover-effect d-block venobox vbox-item" data-overlay="rgba(52,58,64,.6)" href="assets/img/portfolio/large-3.jpg">
+                           <span class="hover-effect-container">
+                           <span class="hover-effect-icon ">
+                           <span class=" fas fa-eye top-icon "></span>
+                           </span>
+                           </span>
+                           <div class="  p-2  ">
+                              <div class="shadow radius-1">
+                                 <img class="img-fluid radius-1" src="assets/img/projects/news_recommender/news_rec (2).png" alt="">
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="mb-6 item">
+                        <a class="radius-1 shadow-inner hover-effect d-block venobox vbox-item" data-overlay="rgba(52,58,64,.6)" href="assets/img/portfolio/large-4.jpg">
+                           <span class="hover-effect-container">
+                           <span class="hover-effect-icon ">
+                           <span class=" fas fa-eye top-icon "></span>
+                           </span>
+                           </span>
+                           <div class="  p-2  ">
+                              <div class="shadow radius-1">
+                                 <img class="img-fluid radius-1" src="assets/img/projects/news_recommender/news_rec (5).png" alt="">
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="mb-6 item">
+                        <a class="radius-1 shadow-inner hover-effect d-block venobox vbox-item" data-overlay="rgba(52,58,64,.6)" href="assets/img/portfolio/large-4.jpg">
+                           <span class="hover-effect-container">
+                           <span class="hover-effect-icon ">
+                           <span class=" fas fa-eye top-icon "></span>
+                           </span>
+                           </span>
+                           <div class="  p-2  ">
+                              <div class="shadow radius-1">
+                                 <img class="img-fluid radius-1" src="assets/img/projects/news_recommender/news_rec (8).png" alt="">
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="mb-6 item">
+                        <a class="radius-1 shadow-inner hover-effect d-block venobox vbox-item" data-overlay="rgba(52,58,64,.6)" href="assets/img/portfolio/large-4.jpg">
+                           <span class="hover-effect-container">
+                           <span class="hover-effect-icon ">
+                           <span class=" fas fa-eye top-icon "></span>
+                           </span>
+                           </span>
+                           <div class="  p-2  ">
+                              <div class="shadow radius-1">
+                                 <img class="img-fluid radius-1" src="assets/img/projects/news_recommender/news_rec (11).png" alt="">
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <br>
+                     <h1 class="font-weight-600">Images <mark>Mobile</mark> App</h1><br>
+                     <div class="mb-6 item">
+                        <a class="radius-1 shadow-inner hover-effect d-block venobox vbox-item" data-overlay="rgba(52,58,64,.6)" href="assets/img/portfolio/large-4.jpg">
+                           <span class="hover-effect-container">
+                           <span class="hover-effect-icon ">
+                           <span class=" fas fa-eye top-icon "></span>
+                           </span>
+                           </span>
+                           <div class="  p-2  ">
+                              <div class="shadow radius-1">
+                                 <img class="img-fluid radius-1" src="assets/img/projects/news_recommender/m_app_1.jpg" alt="">
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="mb-6 item">
+                        <a class="radius-1 shadow-inner hover-effect d-block venobox vbox-item" data-overlay="rgba(52,58,64,.6)" href="assets/img/portfolio/large-4.jpg">
+                           <span class="hover-effect-container">
+                           <span class="hover-effect-icon ">
+                           <span class=" fas fa-eye top-icon "></span>
+                           </span>
+                           </span>
+                           <div class="  p-2  ">
+                              <div class="shadow radius-1">
+                                 <img class="img-fluid radius-1" src="assets/img/projects/news_recommender/m_app_2.jpg" alt="">
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="row align-items-center justify-content-center">
+                  <div class="col-md-10 text-center">
+                     <ul class="list-inline  mb-0">
+                        <li class="list-inline-item mr-1 outer radius-2 mb-2 mb-lg-0">
+                           <a class="inner btn btn-round btn-icon" href="https://www.linkedin.com/in/aasma-aas-muhammad-0a8726184/" >
+                           <span class="fab fa-linkedin btn-icon-inner"></span>
+                           </a>
+                        </li>
+                        <li class="list-inline-item mx-0 outer radius-2 mb-2 mb-lg-0">
+                           <a class="inner btn btn-round btn-icon" href="https://github.com/Aasma-Aas" >
+                           <span class="fab fa-github btn-icon-inner"></span>
+                           </a>
+                        </li>
+                        <li class="list-inline-item mr-1 outer radius-2 mb-2 mb-lg-0">
+                           <a class="inner btn btn-round btn-icon" href="https://stackoverflow.com/users/10096169/aasma">
+                           <span class="fab fa-stack-overflow btn-icon-inner"></span>
+                           </a>
+                        </li>
+                        <li class="list-inline-item mr-1 outer radius-2 mb-2 mb-lg-0">
+                           <a class="inner btn btn-round btn-icon" href="">
+                           <span class="fab fa-google btn-icon-inner"></span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-12 mt-6 pt-6 mb-6">
+                     <hr class="divider divider-lg divider-center ">
+                  </div>
+               </div>
+            </div>
+         </section>
+         <a class="outer scroll-to-top  scroll" href="#wrapper">
+            <div class="scroll-to-top-inner inner radius-2"><span class=" fas fa-arrow-up top-icon "></span></div>
+         </a>
+         <!-- End to the top -->
+      </div>
+      <!-- End wrapper-->
+      <!--Javascript-->
+      <script src="js/jquery-1.12.4.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easytabs.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/smooth-scroll.js"></script>
+      <script src="js/venobox.js"></script>
+      <script src="js/owl.carousel.js"></script>
+      <script src="js/placeholders.min.js"></script>
+      <script src="js/parallax.js"></script>
+      <script src="js/morphext.min.js"></script>
+      <script src="js/switcher.js"></script>
+      <script src="js/script.js"></script>
+      <!-- Google analytics -->
+      <!-- End google analytics -->
+   </body>
+</html>
+

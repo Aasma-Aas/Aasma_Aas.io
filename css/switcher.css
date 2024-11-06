@@ -1,0 +1,123 @@
+.styler {
+    background-color: #f3f5f8;
+    left: 30px;
+    position: fixed;
+    top: 50px;
+    width: 278px;
+    z-index: 9999;
+    display: block;
+    left: -278px;
+    box-shadow:3px 3px 3px #cdcdcd, -3px -3px 3px #fafafa;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.styler .toggle {
+    position:absolute;
+    right: -70px;
+    top: 0;
+}
+.styler .day-night-mode {
+    position:absolute;
+    right: -130px;
+    top: 0;
+}
+.styler .toggle a, .styler .day-night-mode a{
+    background: #f3f5f8;
+    font-size: 22px;
+    height: 50px;
+    text-align: center;
+    top: 0;
+    width: 50px;
+    color:#212529;
+    line-height: 2.5;
+}
+
+.color-list li {
+    display: inline-block;
+    border-radius: 4rem;
+}
+.color-list li a {
+    display: block;
+    height: 16px;
+    width: 16px;
+    border-radius: 4rem;
+    line-height: .9;
+    text-align: center;
+}
+
+.color-list li a span {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 4rem;
+    
+}
+.styler .toggle a span {
+    display:block;
+    line-height: 2.4;
+  -webkit-animation: rotation 2s infinite linear;
+  animation: rotation 2s infinite linear;
+
+}
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.clr-1 span {background: #f56c6d ;}
+.clr-2 span {background: #558e6a ;}
+.clr-3 span {background: #00b4d9 ;}
+.clr-4 span {background: #14c8c8 ;}
+.clr-5 span{background: #7369b9 ;}
+.clr-6 span {background: #d0a068 ;}
+.clr-7 span{background: #ead22d ;}
+.clr-8 span {background: #eb874f ;}
+.clr-9 span {background: #fdc62a ;}
+.clr-10 span{background: #ef3e96 ;}
+.clr-11 span{background: #009473 ;}
+.clr-12 span{background: #55606e ;}
+.clr-13 span{background: #fe8178 ;}
+.clr-14 span {background: #734854 ;}
+.clr-15 span{background: #113f59 ;}
+.clr-16 span{background: #ffd42d ;}
+.clr-17 span {background: #a0ce4e ;}
+.clr-18 span{background: #2997ab ;}
+.clr-19 span {background: #4765a0 ;}
+.clr-20 span{background: #e53f51 ;}
+.clr-21 span{background: #065e52 ;}
+.clr-22 span{background: #0487cc ;}
+.clr-23 span{background: #cea525 ;}
+.clr-24 span{background: #ff5b24 ;}
+.clr-25 span{background: #9c8061 ;}
+.clr-26 span{background: #cf4075 ;}
+.clr-27 span{background: #d50e46 ;}
+.clr-28 span{background: #b565a7 ;}
+.clr-29 span{background: #c3512f ;}
+.clr-30 span{background: #9661ab ;}
+.clr-31 span{background: #82b541 ;}
+.clr-32 span{background: #9197a3 ;}
+.clr-33 span{background: #3b5998 ;}
+
+
+
+
+
+
